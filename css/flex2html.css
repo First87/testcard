@@ -14,12 +14,12 @@
   box-sizing: inherit;
 }
 .chatbox  {
-  background-color: #849ebf;
+  background-color: #d4d4d4;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
   padding-top: 50px;
-  width: 500px;
+  width: 100%;
   height: auto;
   line-height: 1.4;
   color: #444;
@@ -53,11 +53,12 @@
 *::before {
   box-sizing: inherit;
 }
-body,
-html {
-  background-color: transparent;
-}
+
 body {
+  /* background-color: #42659a; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   line-height: 1.4;
   color: #444;
   font-family: -apple-system, "BlinkMacSystemFont", Helvetica, Roboto,
@@ -2629,4 +2630,59 @@ strong {
 }
 .ExTxtDecLt {
   text-decoration: line-through !important;
+}
+
+
+nav {
+  height: 65px;
+  background-color: #28282a;
+  overflow: hidden;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav1 {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px; /* ระยะห่างระหว่าง tag a */
+}
+
+.logo img {
+  width: 100%; 
+  padding: 2rem;
+}
+.bx-h2 {
+  display: flex;
+  font-size: 5vmin;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+
+}
+
+#flex14,#flex13,#flex11{
+  /* border:  2px solid rgb(149, 149, 149); */
+  border-radius: 20px;
+  padding: 2rem;
+  margin-top: 2rem;
+  /* background-color:rgb(63, 63, 63); */
 }
